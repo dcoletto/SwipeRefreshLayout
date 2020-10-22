@@ -982,7 +982,7 @@ public class CustomSwipeRefreshLayout extends ViewGroup {
         return handled;
     }
 
-    private void startRefresh() {
+    public void startRefresh() {
         if (!checkCanDoRefresh()) {
             updatePositionTimeout(false);
             return;
